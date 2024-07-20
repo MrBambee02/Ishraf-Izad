@@ -93,7 +93,7 @@ class VRButton{
             currentSession.removeEventListener( 'end', onSessionEnded );
 
             self.stylizeElement( button, true, 12, true );
-            button.textContent = 'ENTER VR';
+            button.textContent = 'PLAY';
 
             currentSession = null;
             
