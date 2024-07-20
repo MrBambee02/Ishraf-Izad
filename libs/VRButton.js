@@ -107,7 +107,7 @@ class VRButton{
         button.style.right = '20px';
         button.style.width = '80px';
         button.style.cursor = 'pointer';
-        button.innerHTML = 'PLAY';
+        button.textContent = 'Start Game';
         
 
         button.onmouseenter = function () {
@@ -121,7 +121,7 @@ class VRButton{
         button.onmouseleave = function () {
             
             button.style.fontSize = '30px'; 
-            button.innerHTML = 'PLAY';
+            button.innerHTML = '<i class="fas fa-vr-cardboard"></i>';
             button.style.opacity = '0.5';
 
         };
