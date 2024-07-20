@@ -93,7 +93,7 @@ class VRButton{
             currentSession.removeEventListener( 'end', onSessionEnded );
 
             self.stylizeElement( button, true, 12, true );
-            button.textContent = 'PLAY VR';
+            button.textContent = 'ENTER VR';
 
             currentSession = null;
             
@@ -107,13 +107,13 @@ class VRButton{
         button.style.right = '20px';
         button.style.width = '80px';
         button.style.cursor = 'pointer';
-        button.innerHTML = '<i class="fas fa-vr-cardboard"></i>';
+        button.innerHTML = 'PLAY';
         
 
         button.onmouseenter = function () {
             
             button.style.fontSize = '12px'; 
-            button.textContent = (currentSession===null) ? 'PLAY VR' : 'EXIT VR';
+            button.textContent = (currentSession===null) ? 'ENTER VR' : 'EXIT VR';
             button.style.opacity = '1.0';
 
         };
@@ -121,7 +121,7 @@ class VRButton{
         button.onmouseleave = function () {
             
             button.style.fontSize = '30px'; 
-            button.innerHTML = '<i class="fas fa-vr-cardboard"></i>';
+            button.innerHTML = 'PLAY';
             button.style.opacity = '0.5';
 
         };
